@@ -2,6 +2,13 @@
 name = "unbounded-udp"
 version = "1.0.0"
 edition = "2021"
+authors = ["Yuri Edward <yuri6037@outlook.com>"]
+description = "Create unbounded UdpSocket in safe Rust."
+license = "BSD-3-Clause"
+repository = "https://github.com/Yuri6037/unbounded-udp"
+readme = "./README.MD"
+keywords = ["io", "socket", "network"]
+categories = ["network-programming"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
