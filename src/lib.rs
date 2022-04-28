@@ -76,7 +76,7 @@ impl Unbounded for UdpSocket {
                 Domain::IpV4 => AF_INET,
                 Domain::Ipv6 => AF_INET6
             };
-            let sock = unsafe { socket(domain, SOCK_DGRAM, IPPROTO_UDP) };
+            let sock = unsafe { socket(domain as i32, SOCK_DGRAM as i32, IPPROTO_UDP) };
             if sock == INVALID_SOCKET {
                 return Err(Error::from_raw_os_error(unsafe { WSAGetLastError() }));
             }
